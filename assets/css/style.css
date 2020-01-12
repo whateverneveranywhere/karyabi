@@ -5,11 +5,18 @@ body {
   font-family: IRANSans !important;
   font-weight: 300;
   direction: rtl;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, input, textarea {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
   font-family: IRANSans !important;
 }
 
@@ -37,7 +44,9 @@ h1 {
   font-size: 0.8rem;
 }
 
-.checkbox .form-help, .form-radio .form-help, .form-group .form-help {
+.checkbox .form-help,
+.form-radio .form-help,
+.form-group .form-help {
   position: absolute;
   width: 100%;
 }
@@ -92,7 +101,7 @@ h1 {
 }
 
 .form-group .bar::before {
-  content: '';
+  content: "";
   height: 0.125rem;
   width: 0;
   left: 50%;
@@ -212,8 +221,9 @@ h1 {
   color: #999;
 }
 
-.radio .helper::before, .radio .helper::after {
-  content: '';
+.radio .helper::before,
+.radio .helper::after {
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -267,7 +277,8 @@ h1 {
   transition: border-color 0.28s ease;
 }
 
-.checkbox .helper::before, .checkbox .helper::after {
+.checkbox .helper::before,
+.checkbox .helper::after {
   position: absolute;
   height: 0;
   width: 0.2rem;
@@ -276,7 +287,7 @@ h1 {
   -webkit-transform-origin: left top;
   transform-origin: left top;
   border-radius: 0.25rem;
-  content: '';
+  content: "";
   -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
   transition: opacity 0.28s ease, height 0s linear 0.28s;
   opacity: 0;
@@ -308,7 +319,8 @@ h1 {
   color: #33527d;
 }
 
-.checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
+.checkbox input:checked ~ .helper::after,
+.checkbox input:checked ~ .helper::before {
   opacity: 1;
   -webkit-transition: height 0.28s ease;
   transition: height 0.28s ease;
@@ -329,14 +341,18 @@ h1 {
   margin-top: 1rem;
 }
 
-.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+.has-error .legend.legend,
+.has-error.form-group .control-label.control-label {
   color: #d9534f;
 }
 
 .has-error.form-group .form-help,
-.has-error.form-group .helper, .has-error.checkbox .form-help,
-.has-error.checkbox .helper, .has-error.radio .form-help,
-.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-group .helper,
+.has-error.checkbox .form-help,
+.has-error.checkbox .helper,
+.has-error.radio .form-help,
+.has-error.radio .helper,
+.has-error.form-radio .form-help,
 .has-error.form-radio .helper {
   color: #d9534f;
 }
@@ -356,11 +372,11 @@ h1 {
   margin: 3rem 0;
   padding: 0.75rem 3rem;
   cursor: pointer;
-  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-  -webkit-transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, -webkit-box-shadow 0.28s ease;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, -webkit-box-shadow 0.28s ease;
   overflow: hidden;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -373,7 +389,7 @@ h1 {
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   background: #071017;
   border: 50vh solid #1d4567;
@@ -395,11 +411,13 @@ h1 {
           box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
-.button:active::before, .button:focus::before {
+.button:active::before,
+.button:focus::before {
   -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
   transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
@@ -440,7 +458,9 @@ fieldset {
   font-size: 0.8rem;
 }
 
-.checkbox .form-help, .form-radio .form-help, .form-group .form-help {
+.checkbox .form-help,
+.form-radio .form-help,
+.form-group .form-help {
   position: absolute;
   width: 100%;
 }
@@ -505,7 +525,7 @@ fieldset {
 }
 
 .form-group .bar::before {
-  content: '';
+  content: "";
   height: 0.125rem;
   width: 0;
   left: 50%;
@@ -624,8 +644,9 @@ fieldset {
   color: #999;
 }
 
-.radio .helper::before, .radio .helper::after {
-  content: '';
+.radio .helper::before,
+.radio .helper::after {
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -679,7 +700,8 @@ fieldset {
   transition: border-color 0.28s ease;
 }
 
-.checkbox .helper::before, .checkbox .helper::after {
+.checkbox .helper::before,
+.checkbox .helper::after {
   position: absolute;
   height: 0;
   width: 0.2rem;
@@ -688,7 +710,7 @@ fieldset {
   -webkit-transform-origin: left top;
   transform-origin: left top;
   border-radius: 0.25rem;
-  content: '';
+  content: "";
   -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
   transition: opacity 0.28s ease, height 0s linear 0.28s;
   opacity: 0;
@@ -718,7 +740,8 @@ fieldset {
   color: #33527d;
 }
 
-.checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
+.checkbox input:checked ~ .helper::after,
+.checkbox input:checked ~ .helper::before {
   opacity: 1;
   -webkit-transition: height 0.28s ease;
   transition: height 0.28s ease;
@@ -739,14 +762,18 @@ fieldset {
   margin-top: 1rem;
 }
 
-.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+.has-error .legend.legend,
+.has-error.form-group .control-label.control-label {
   color: #d9534f;
 }
 
 .has-error.form-group .form-help,
-.has-error.form-group .helper, .has-error.checkbox .form-help,
-.has-error.checkbox .helper, .has-error.radio .form-help,
-.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-group .helper,
+.has-error.checkbox .form-help,
+.has-error.checkbox .helper,
+.has-error.radio .form-help,
+.has-error.radio .helper,
+.has-error.form-radio .form-help,
 .has-error.form-radio .helper {
   color: #d9534f;
 }
@@ -766,11 +793,11 @@ fieldset {
   margin: 3rem 0;
   padding: 0.75rem 3rem;
   cursor: pointer;
-  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-  -webkit-transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, -webkit-box-shadow 0.28s ease;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, -webkit-box-shadow 0.28s ease;
   overflow: hidden;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -783,7 +810,7 @@ fieldset {
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   background: #071017;
   border: 50vh solid #1d4567;
@@ -805,11 +832,13 @@ fieldset {
           box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
-.button:active::before, .button:focus::before {
+.button:active::before,
+.button:focus::before {
   -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
   transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
@@ -900,19 +929,19 @@ blockquote {
 
 .mainbox {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: table;
   margin-bottom: 30px;
-  border-right: 8px solid #FFFF33;
+  border-right: 8px solid #ffff33;
 }
 
 .mainboxnegativ {
   width: 100%;
-  background-color: #00171F;
+  background-color: #00171f;
   display: table;
   margin-bottom: 30px;
-  border-right: 8px solid #FFFF33;
-  color: #FFFFFF;
+  border-right: 8px solid #ffff33;
+  color: #ffffff;
 }
 
 .mainbox2 {
@@ -933,8 +962,8 @@ blockquote {
 
 .mainbox2negativ {
   font-size: 1em;
-  color: #FFFFFF;
-  background-color: #00171F;
+  color: #ffffff;
+  background-color: #00171f;
   padding-right: 20px;
 }
 
@@ -965,7 +994,7 @@ blockquote {
   margin-left: 10px;
   margin-bottom: 0px;
   min-width: 0px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .titelbox {
@@ -976,8 +1005,8 @@ blockquote {
   margin-left: 10px;
   margin-bottom: 0px;
   min-width: 0px;
-  background-color: #FFFFFF;
-  color: #4B4B4B;
+  background-color: #ffffff;
+  color: #4b4b4b;
 }
 
 .lefttbox {
@@ -1018,11 +1047,11 @@ blockquote {
 }
 
 .bg-dark {
-  background-color: #00171F !important;
+  background-color: #00171f !important;
 }
 
 .bg-light {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
 }
 
 .bg-1 {
@@ -1030,11 +1059,11 @@ blockquote {
 }
 
 .bg-2 {
-  background-color: #007EA7 !important;
+  background-color: #007ea7 !important;
 }
 
 .bg-3 {
-  background-color: #00A8E8 !important;
+  background-color: #00a8e8 !important;
 }
 
 .bg-grad {
@@ -1044,8 +1073,8 @@ blockquote {
 }
 
 .btn-outline-light {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .btn {
@@ -1076,7 +1105,7 @@ blockquote {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 300px;
+  height: 400px;
   background-size: cover;
 }
 
@@ -1111,9 +1140,7 @@ blockquote {
   background-size: 200% auto;
   color: white;
   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-  -webkit-box-shadow: 0 0 20px #eee;
-          box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
+  border-radius: 60px;
 }
 
 /* Demo Stuff End -> */
@@ -1167,7 +1194,8 @@ a:hover {
   border: 0.5px solid #00a8e8;
 }
 
-.select2-container--default .select2-results__option--highlighted[aria-selected] {
+.select2-container--default
+.select2-results__option--highlighted[aria-selected] {
   background-color: #020d2d;
   color: white;
 }
@@ -1176,8 +1204,139 @@ a:hover {
   text-align: right;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
+.select2-container--default
+.select2-selection--single
+.select2-selection__rendered {
   text-align: right;
+}
+
+.wave {
+  height: auto;
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: -1px;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.grad-bg-2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(44%, #00000096), to(#000000)), url("/assets/img/boss.png");
+  background-image: linear-gradient(90deg, #020024 0%, #00000096 44%, #000000 100%), url("/assets/img/boss.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.grad-bg-1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(44%, #00000096), to(#000000)), url("/assets/img/seek.png");
+  background-image: linear-gradient(90deg, #020024 0%, #00000096 44%, #000000 100%), url("/assets/img/seek.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.grow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.grow:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  margin-bottom: 7px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #00a8e8;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #00a8e8;
+          box-shadow: 0 0 1px #00a8e8;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.main-big-list {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.main-big-list:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
 }
 
 @media (max-width: 992px) {

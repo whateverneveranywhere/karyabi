@@ -173,7 +173,7 @@
       <!-- material design form -->
 
       <section>
-        <div class="container-fluid">
+        <div class="container-fluid hide-mobile ">
           <div class="row">
             <div class="col-md-12 pr-0 pl-0">
               <div id="text-on-grad-1">
@@ -182,53 +182,108 @@
                   <strong>اوج بگیر!</strong>
                 </h1>
                 <div class="container bg-white rounded shadow-lg">
-                  <form>
+                  <div class="container mt-5">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <input
+                            class="text-right"
+                            type="text"
+                            required="required"
+                          />
+                          <label for="input" class="control-label"
+                            ><i class="fas fa-briefcase ml-2"></i>عنوان شغلی،
+                            مهارت یا...</label
+                          ><i class="bar"></i>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group pt-1 rtl">
+                          <select class="js-example-basic-single" name="state">
+                            <option value="AL">Alabama</option>
+                            ...
+                            <option value="AL">Alabama</option>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="form-group">
-        <input class="text-right" type="text" required="required" />
-        <label for="input" class="control-label"><i class="fas fa-briefcase ml-2"></i>عنوان شغلی، مهارت یا...</label><i class="bar"></i>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="form-group pt-1 rtl">
-        <select class="js-example-basic-single" name="state">
-          <option value="AL">Alabama</option>
-            ...          <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                          </select>
+                          <label for="select" class="control-label"
+                            ><i class="fas fa-location-arrow ml-1"></i>
+                            استان‌ها</label
+                          ><i class="bar"></i>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group pt-1 rtl">
+                          <select class="js-example-basic-single" name="state">
+                            <option value="AL">Alabama</option>
+                            ...
 
-          <option value="WY">Wyoming</option>
-        </select>
-        <label for="select" class="control-label"><i class="fas fa-location-arrow ml-1"></i> استان‌ها</label><i class="bar"></i>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="form-group pt-1 rtl">
-        <select class="js-example-basic-single" name="state">
-          <option value="AL">Alabama</option>
-            ...      
-
-          <option value="WY">Wyoming</option>
-        </select>
-        <label for="select" class="control-label"><i class="fas fa-list ml-1"></i> دسته‌بندی‌ها</label><i class="bar"></i>
-      </div>
-    </div>  
-    <div class="col-md-2 d-inline-flex">
-      <div class="container-btn">
-        <a href="#" class="btn-sm btn-block btn-grad btn-1 p-3 text-white">بگرد!</a>
-      </div>  
-      </div>
-  </div>
-</div>
-
-           
-               
-                </div>
-       
+                            <option value="WY">Wyoming</option>
+                          </select>
+                          <label for="select" class="control-label"
+                            ><i class="fas fa-list ml-1"></i>
+                            دسته‌بندی‌ها</label
+                          ><i class="bar"></i>
+                        </div>
+                      </div>
+                      <div class="col-md-2 d-inline-flex">
+                        <div class="container-btn">
+                          <a
+                            href="#"
+                            class="btn-sm btn-block btn-grad btn-1 p-3 text-white"
+                            >بگرد!</a
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-             
+              </div>
+              <svg
+                class="wave"
+                width="auto"
+                height="150px"
+                viewbox="0 0 1920 150"
+              >
+                <path
+                  fill="#fff"
+                  d="M1920,150H0V43c0,0,150.026,143.803,641.497,32 C1380-93,1920,90,1920,90"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-fluid bg-white">
+          <div class="row">
+            <div class="col-md-6 overflow-hidden">
+              <div class="card grad-bg-2 m-2 text-center" data-tilt>
+                <div class="card-body">
+                  <p class="card-text text-white">
+                    کارفرما هستم و یه سری چرت و پرت دیگه
+                  </p>
+                  <a
+                    href="#"
+                    class="btn-sm btn-block btn-grad btn-2 font-weight-bold p-3 text-dark"
+                    >ثبت آگهی</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 overflow-hidden">
+              <div class="card grad-bg-1 m-2 text-center" data-tilt>
+                <div class="card-body">
+                  <p class="card-text text-white">
+                    کارجو عستم و یه سری چرت و پرت دیگه
+                  </p>
+                  <a
+                    href="#"
+                    class="btn-sm btn-block btn-grad btn-4 font-weight-bold p-3 text-dark"
+                    >جستجو آگهی</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -236,30 +291,291 @@
       </section>
 
       <section>
-        <div class="container-fluid">
+        <div class="container pt-5">
+          <h2 class="h4 text-center pb-1">برترین کارفرمایان</h2>
+          <hr />
           <div class="row">
-            <div class="col-md-12">
-                 <div class="container-fluid bg-dark">
+            <div class="col-md-2 grow rounded text-center">
+              <img
+                class="img-fluid p-3 rounded"
+                src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                alt=""
+              />
+              <p class="text-center font-weight-bold">استادکار</p>
+            </div>
+            <div class="col-md-2 grow rounded text-center">
+              <img
+                class="img-fluid p-3 rounded"
+                src="https://jobinja.ir/files/uploads/images/ecfadc0e-cf5e-11e9-9a53-d6b790452c1a_14ab22f6-5128-4b10-bb7a-3768fe4e4605/companies_logo_128x128.png"
+                alt=""
+              />
+              <p class="text-center font-weight-bold">اسنپ فود</p>
+            </div>
+            <div class="col-md-2 grow rounded text-center">
+              <img
+                class="img-fluid p-3 rounded"
+                src="https://jobinja.ir/files/uploads/images/72c08826-7345-11e6-8345-06a874001fea_4b759fe0-1fc1-457e-883b-83f3370af2e8/companies_logo_128x128.jpg"
+                alt=""
+              />
+              <p class="text-center font-weight-bold">پرهام</p>
+            </div>
+            <div class="col-md-2 grow rounded text-center">
+              <img
+                class="img-fluid p-3 rounded"
+                src="https://jobinja.ir/files/uploads/images/c02d7baa-4e64-11e7-956a-06a874001fea_3a4a0e98-46e5-414c-99fa-1623db20672d/companies_logo_128x128.jpg"
+                alt=""
+              />
+              <p class="text-center font-weight-bold">طرفه نگار</p>
+            </div>
+            <div class="col-md-2 grow rounded text-center">
+              <img
+                class="img-fluid p-3 rounded"
+                src="https://jobinja.ir/files/uploads/images/cc3c25c4-caa5-11e6-b198-06a874001fea_af3cc63f-0c49-47ae-b2c4-5614c5ac8e7c/companies_logo_128x128.png"
+                alt=""
+              />
+              <p class="text-center font-weight-bold">آپارات</p>
+            </div>
+            <div class="col-md-2 grow rounded text-center">
+              <img
+                class="img-fluid p-3 rounded"
+                src="https://jobinja.ir/files/uploads/images/3ebfd70a-2564-11ea-adc2-26a4da5b8340_d57e5974-3551-41f2-a589-dd218be72de2/companies_logo_128x128.jpg"
+                alt=""
+              />
+              <p class="text-center font-weight-bold">ایران هتل آنلاین</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h3 class="h5 text-center pt-5 pb-1">
+            آگهی های استخدامی
+            <span class="text-danger"><strong>فوری</strong></span>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-dark text-small mr-2"
+            >
+              مشاهده همه
+            </button>
+          </h3>
+
+          <hr />
+          <div class="row">
+            <div class="col-md-4 text-right">
+              جدیدترین ها
+              <button
+              type="button"
+              class="btn btn-sm btn-outline-dark text-small mr-2"
+            >
+              مشاهده همه
+            </button>
+            </div>
+
+            <div class="col-md-8">
+              <article>
+                <div class="container">
                   <div class="row">
-                    <div class="col-md-6 d-inline-flex-center text-center">
-                      <div class="card w-75">
-                        <img class="card-img-top" src="./assets/img/interview.png" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="col-md-6">
+                      <p class="text-muted text-right ml-auto pl-auto">
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                        </label>
+                        آگهی های جدید را به من خبر بده
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="text-muted text-left ml-auto pl-auto">
+                        264 شغل
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 main-big-list text-right">
+                      <div class="row">
+                        <div class="col-md-2 d-inline-flex-center">
+                          <img
+                            class="img-fluid"
+                            src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <h6 class="text-small m-2">
+                            <i class="far fa-building ml-2"></i>
+                            نام شرکت
+                          </h6>
+                          <p class="text-small m-2">
+                            <i class="fas fa-user-alt ml-2"></i>
+                            استخدام Front-End Developer
+                          </p>
+                          <p class="text-small m-2">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            تهران
+                          </p>
+
+                          <p class="text-small m-2">
+                            <i class="fas fa-calendar-alt ml-2"></i>
+                            ارسال شده در 17/10/77
+                          </p>
+                        </div>
+                        <div class="col-md-4  text-center">
+                          <h1 class="text-center">
+                            <i class="far fa-star"></i>
+                            <h6>2.5/5</h6>
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn btn-primary text-small"
+                          >
+                            ارسال رزومه سریع
+                            <i class="fas fa-paper-plane mr-2"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6 d-inline-flex-center text-center">
-                      <div class="card w-75">
-                        <img class="card-img-top" src="./assets/img/interview.png" alt="Card image cap">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="col-md-12 main-big-list text-right">
+                      <div class="row">
+                        <div class="col-md-2 d-inline-flex-center">
+                          <img
+                            class="img-fluid"
+                            src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <h6 class="text-small m-2">
+                            <i class="far fa-building ml-2"></i>
+                            نام شرکت
+                          </h6>
+                          <p class="text-small m-2">
+                            <i class="fas fa-user-alt ml-2"></i>
+                            استخدام Front-End Developer
+                          </p>
+                          <p class="text-small m-2">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            تهران
+                          </p>
+
+                          <p class="text-small m-2">
+                            <i class="fas fa-calendar-alt ml-2"></i>
+                            ارسال شده در 17/10/77
+                          </p>
+                        </div>
+                        <div class="col-md-4  text-center">
+                          <h1 class="text-center">
+                            <i class="far fa-star"></i>
+                            <h6>2.5/5</h6>
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn btn-primary text-small"
+                          >
+                            ارسال رزومه سریع
+                            <i class="fas fa-paper-plane mr-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 main-big-list text-right">
+                      <div class="row">
+                        <div class="col-md-2 d-inline-flex-center">
+                          <img
+                            class="img-fluid"
+                            src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <h6 class="text-small m-2">
+                            <i class="far fa-building ml-2"></i>
+                            نام شرکت
+                          </h6>
+                          <p class="text-small m-2">
+                            <i class="fas fa-user-alt ml-2"></i>
+                            استخدام Front-End Developer
+                          </p>
+                          <p class="text-small m-2">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            تهران
+                          </p>
+
+                          <p class="text-small m-2">
+                            <i class="fas fa-calendar-alt ml-2"></i>
+                            ارسال شده در 17/10/77
+                          </p>
+                        </div>
+                        <div class="col-md-4  text-center">
+                          <h1 class="text-center">
+                            <i class="far fa-star"></i>
+                            <h6>2.5/5</h6>
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn btn-primary text-small"
+                          >
+                            ارسال رزومه سریع
+                            <i class="fas fa-paper-plane mr-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 main-big-list text-right">
+                      <div class="row">
+                        <div class="col-md-2 d-inline-flex-center">
+                          <img
+                            class="img-fluid"
+                            src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <h6 class="text-small m-2">
+                            <i class="far fa-building ml-2"></i>
+                            نام شرکت
+                          </h6>
+                          <p class="text-small m-2">
+                            <i class="fas fa-user-alt ml-2"></i>
+                            استخدام Front-End Developer
+                          </p>
+                          <p class="text-small m-2">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            تهران
+                          </p>
+
+                          <p class="text-small m-2">
+                            <i class="fas fa-calendar-alt ml-2"></i>
+                            ارسال شده در 17/10/77
+                          </p>
+                        </div>
+                        <div class="col-md-4  text-center">
+                          <h1 class="text-center">
+                            <i class="far fa-star"></i>
+                            <h6>2.5/5</h6>
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn btn-primary text-small"
+                          >
+                            ارسال رزومه سریع
+                            <i class="fas fa-paper-plane mr-2"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </article>
+              <button type="button" class="btn btn-block btn-outline-dark">
+                مشاهده همه
+                <i class="fas fa-list mr-2"></i>
+              </button>
             </div>
+
+            <aside></aside>
           </div>
         </div>
       </section>
@@ -282,6 +598,5 @@
     <script src="./assets/js/select.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-
   </body>
 </html>
