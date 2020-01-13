@@ -826,8 +826,6 @@ fieldset {
 }
 blockquote {
   font-weight: 500;
-  padding: 10px;
-  border: 1px dashed #666666;
 }
 
 .mainbox {
@@ -1251,24 +1249,127 @@ input:checked + .slider:before {
 .main-big-list {
   transition: 0.3s;
   padding: 15px;
-  border-radius: 5px;
-  margin: 15px;
+  margin: 5px;
+  border: 2px ;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-bottom-left-radius: 25px;
+
+
 }
 
 .main-big-list:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 10px black;
-  border-radius: 5px;
 }
 
 
+.overme {
+  height: auto;
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+}
+.img-text-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bottom right text */
+.img-text-container-text-block {
+  position: absolute;
+  border-top-left-radius: 60px;
+  bottom: -20px;
+  right: -20px;
+  background-image: linear-gradient(to right top, #00000080, #15030c70, #1e07197d, #230c27, #211138, #21184970, #1b215b7d, #022a6e7a, #0435857a, #05419d7d, #044db67d, #005acf6e);  color: white;
+padding: 25px;
+}
 
 
+.mb-wrap {
+  margin : 20px auto; 
+  padding : 20px; 
+  position : relative; 
+  width : 300px; 
+} 
 
+.mb-wrap p {
+  margin : 0; 
+  padding : 0; 
+}
 
+.mb-wrap blockquote {
+  margin : 0; 
+  padding : 0; 
+  position : relative; 
+} 
 
+.mb-wrap cite {
+  font-style : normal; 
+} 
 
+.mb-style-2 blockquote {
+  padding-top : 150px; 
+} 
 
+.mb-style-2 blockquote:after {
+    background: none repeat scroll 0 0 black;
+    border-radius: 50% 50% 50% 50%;
+    color: #00a8e8;
+    content: "❞";
+    font-family: 'icons';
+    font-size: 70px;
+    height: 130px;
+    left: 50%;
+    line-height: 130px;
+    margin-left: -65px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+    top: 0;
+    width: 130px;
+}
+.mb-style-2 blockquote:before {
+    border-left: 5px solid black;
+    border-radius: 50% 50% 50% 50%;
+    content: "";
+    height: 500px;
+    left: -50px;
+    position: absolute;
+    top: 0;
+    width: 500px;
+    z-index: -1;
+}
+
+.mb-style-2 blockquote p {
+  background : none repeat scroll 0 0 #00a8e8; 
+  box-shadow : 0 -6px 0 black; 
+  color : black; 
+  display : inline; 
+  font-size : 20px; 
+  line-height : 46px; 
+  text-shadow : 0 1px 1px #00a8e8;  
+} 
+
+.mb-attribution {
+  text-align : right; 
+} 
+
+ .mb-author {
+  color : #00a8e8; 
+  font-size : 18px; 
+  padding-top : 10px; 
+  text-shadow : 0 1px 1px black; 
+}  
+
+cite a {
+  color : black; 
+  font-style : italic; 
+} 
+
+cite a:hover {
+  color : #00a8e8; 
+} 
 
 
 
