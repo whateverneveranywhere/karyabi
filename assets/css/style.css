@@ -1185,11 +1185,11 @@ blockquote {
 
 /* Magic Stuff End -> */
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .select2-container--default .select2-selection--single {
@@ -1437,6 +1437,12 @@ input:checked + .slider:before {
 
 cite a {
   color: black;
+}
+
+.btn-active {
+  background-image: none;
+  color: white !important;
+  background-color: #003459 !important;
 }
 
 @media (max-width: 768px) {
