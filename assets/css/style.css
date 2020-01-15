@@ -1107,6 +1107,16 @@ blockquote {
   background-size: cover;
 }
 
+#text-on-grad-2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.479429)), color-stop(44%, rgba(0, 185, 255, 0.146096)), to(rgba(209, 0, 255, 0.479429))), url("/assets/img/first-sec.jpg");
+  background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.479429) 0%, rgba(0, 185, 255, 0.146096) 44%, rgba(209, 0, 255, 0.479429) 100%), url("/assets/img/first-sec.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 600px;
+  background-size: cover;
+}
+
 .container-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1358,6 +1368,7 @@ input:checked + .slider:before {
 }
 
 .mb-wrap {
+  height: 300px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
@@ -1384,9 +1395,9 @@ input:checked + .slider:before {
 }
 
 .mb-style-2 blockquote:after {
-  background: none repeat scroll 0 0 black;
+  background: none repeat scroll 0 0 #00a8e8;
   border-radius: 50% 50% 50% 50%;
-  color: #00a8e8;
+  color: black;
   content: "❞";
   font-family: 'icons';
   font-size: 70px;
@@ -1399,18 +1410,7 @@ input:checked + .slider:before {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
   top: 0;
   width: 130px;
-}
-
-.mb-style-2 blockquote:before {
-  border-left: 5px solid black;
-  border-radius: 50% 50% 50% 50%;
-  content: "";
-  height: 500px;
-  left: -50px;
-  position: absolute;
-  top: 0;
-  width: 500px;
-  z-index: -1;
+  border: 3px dashed black;
 }
 
 .mb-style-2 blockquote p {
@@ -1437,11 +1437,6 @@ input:checked + .slider:before {
 
 cite a {
   color: black;
-  font-style: italic;
-}
-
-cite a:hover {
-  color: #00a8e8;
 }
 
 @media (max-width: 768px) {
@@ -1460,6 +1455,12 @@ cite a:hover {
   }
   .navbar-nav {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-between {
+    display: none !important;
   }
 }
 
