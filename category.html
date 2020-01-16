@@ -116,26 +116,51 @@
     </header>
 
     <main>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12"></div>
-        </div>
-      </div>
 
-      <div class="container-fluid mb-5 mt-5">
+
+      <div class="container-fluid mb-5 mt-3">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 hide-mobile">
             <div
               class="bg-dark shadow-lg text-white text-center rounded-top p-4"
             >
               <h6 class="p-2">از نتایج جدید جستجو بلافاصله مطلع شوید</h6>
-              <button
-                type="button"
-                class="d-inline-flex-center btn btn-sm btn-outline-primary mr-2"
-              >
-                نتایج جدید را خبر بده
-                <i class="fas fa-plus mr-2"></i>
-              </button>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#newsModalCenter">
+  نتایج جدید را خبر بده <i class="fas fa-plus mr-2"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="newsModalCenter" tabindex="-1" role="dialog" aria-labelledby="newsModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="newsModalLongTitle">دریافت آگهی های جدید</h5>
+        <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+     
+          <p class="text-dark">
+           برای عضویت در خبرناکه ایمیلی  ایمیل خود را وارد کنید :
+          </p>
+          <hr>
+          <div class="form-group mt-2 mb-4">
+            <input class="text-right" type="text" required="required">
+            <label for="input" class="control-label"><i class="fas fa-envelope ml-2"></i> آدرس ایمیل </label><i class="bar"></i>
+          </div>
+          <button type="button" class="btn btn-primary">
+            عضویت در خبرنامه
+          </button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
             </div>
 
             <div class="bg-white shadow-lg text-center rounded-bottom p-4">
@@ -162,7 +187,7 @@
                   >
                     <div class="card-body p-0">
                       <form>
-                        <div class="checkbox">
+                        <div class="checkbox mt-3">
                           <label>
                             <input
                               class="text-right"
@@ -270,43 +295,773 @@
               </div>
             </div>
 
-            <div class="col-md-8"></div>
           </div>
           <div class="col-md-8">
-            <div
-              class="bg-white shadow-lg text-center rounded-top p-4"
-            >
-        <div class="row">
-            <div class="col-md-12">
-                <h4 class="p-2">۶,۶۷۳ فرصت ‌شغلی فعال یافت شد</h4>
+            <div class="bg-white shadow-lg text-center rounded-top p-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="p-2">۶,۶۷۳ فرصت ‌شغلی فعال یافت شد</h4>
+                  <div class="container d-inline-flex-center">
+                    <p class="text-small pl-2 m-0 p-0">
+                      نمایش بر اساس : 
+                    </p>
+                    <div class="buttons-filter-wrapper overflow-auto">
+                    <div class="buttons-filter w-max">
+                      <a
+                      href="#"
+                      class="btn-sm m-0 text-small btn-grad btn-4 p-2 text-dark btn-active"
+                      type="button"
+                    >
+                      بیشترین مطابقت با من
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-sm m-0 text-small btn-grad btn-4 p-2 text-dark"
+                      type="button"
+                    >
+                      بیشترین مطابقت با من
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-sm m-0 text-small btn-grad btn-4 p-2 text-dark"
+                      type="button"
+                    >
+                      بیشترین مطابقت با من
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-sm m-0 text-small btn-grad btn-4 p-2 text-dark"
+                      type="button"
+                    >
+                      بیشترین مطابقت با من
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-sm m-0 text-small btn-grad btn-4 p-2 text-dark"
+                      type="button"
+                    >
+                      بیشترین مطابقت با من
+                    </a>
 
-<div>
-    <p class="text-small d-inline-flex-center">
-        نمایش بر اساس : 
-    </p>
-    <a href="#" class="btn-sm m-0 text-small btn-grad btn-4 p-2 text-dark btn-active" type="button">
-        بیشترین مطابقت با من
-       </a>
-       <a href="#" class="btn-sm m-0 text-small btn-grad btn-2 p-2 text-dark" type="button">
-         بیشترین مطابقت با من
-        </a>
-        <a href="#" class="btn-sm m-0 text-small btn-grad btn-2 p-2 text-dark" type="button">
-         بیشترین مطابقت با من
-        </a>
-        <a href="#" class="btn-sm m-0 text-small btn-grad btn-2 p-2 text-dark" type="button">
-         بیشترین مطابقت با من
-        </a>
-        <a href="#" class="btn-sm m-0 text-small btn-grad btn-2 p-2 text-dark" type="button">
-         بیشترین مطابقت با من
-        </a>
-</div >
+                    </div>
+                  </div>
+            
 
+
+                  </div>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-sm btn-block btn-dark hide-desktop hide-between mb-2" data-toggle="modal" data-target="#exampleModalCenter">
+  فیلتر های بیشتر</button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">فیلتر ها</h5>
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="bg-white text-center rounded-bottom p-4">
+            <div class="accordion" id="accordionExample">
+              <div class="text-right mb-2 mt-2">
+                <div id="headingOne">
+                  <a href="#" class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <i class="fas fa-list ml-1"></i> دسته‌بندی شغلی
+                  </a>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                  <div class="card-body p-0">
+                    <form>
+                      <div class="checkbox mt-3">
+                        <label>
+                          <input class="text-right" type="checkbox" checked="checked">I'm the label from a checkbox<i class="helper"></i>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input class="text-right" type="checkbox">I'm the
+                          label from a checkbox<i class="helper"></i>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input class="text-right" type="checkbox">I'm the
+                          label from a checkbox<i class="helper"></i>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-    
 
+            <div class="text-right mb-2 mt-2">
+              <div id="headingTwo">
+                <a href="#" class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fas fa-map-marker-alt ml-1"></i>  استان
+                </a>
+              </div>
 
+              <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo">
+                <div class="card-body p-0">
+                  2
+                </div>
+              </div>
+            </div>
+
+            <div class="text-right mb-2 mt-2">
+              <div id="headingThree">
+                <a href="#" class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 <i class="far fa-copy ml-1"></i> نوع قرارداد
+                </a>
+              </div>
+
+              <div id="collapseThree" class="collapse " aria-labelledby="headingThree">
+                <div class="card-body p-0">
+                  3
+                </div>
+              </div>
+            </div>
+
+            <div class="text-right mb-2 mt-2">
+              <div id="headingFour">
+                <a href="#" class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                 <i class="fas fa-vote-yea ml-1"></i>سابقه کار
+                </a>
+              </div>
+
+              <div id="collapseFour" class="collapse " aria-labelledby="headingFour">
+                <div class="card-body p-0">
+                  4
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
+    </div>
+  </div>
+  
+
+                  <hr />
+
+                  <div class="continer cat-big-list bg-white">
+                    <div class="row">
+                      <div class="col-md-2 m-auto">
+                        <img
+                          class="img-fluid"
+                          src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                          alt=""
+                        />
+
+                        <p class="text-center pt-3 h6">
+                          <i class="fas fa-star text-warning ml-2"></i>2.5/5
+                        </p>
+                        <p class="text-center h6">
+                          <i class="fas fa-eye text-dark ml-2"></i>2k
+                        </p>
+                      </div>
+                      <div class="col-md-6 mt-2 mb-2 text-right">
+                        <h5 class="pr-2 pb-2">
+                          کارشناس فروش نرم افزار
+                          <span
+                            class="font-weight-normal badge badge-pill badge-danger"
+                            >فوری</span
+                          >
+                        </h5>
+                        <h6 class="text-small m-2">
+                          <i class="far fa-building ml-2"></i>
+                          نام شرکت
+                        </h6>
+                        <p class="text-small m-2">
+                          <i class="fas fa-user-alt ml-2"></i>
+                          استخدام Front-End Developer
+                        </p>
+                        <p class="text-small m-2">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          تهران
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-copy ml-2"></i>
+                          قرارداد تمام‌وقت (حقوق از ۳,۵۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰
+                          تومان)
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-clock ml-2"></i>
+                          ارسال شده در 5:45 بعد از ظهر امرو
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="text-right">
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-primary"
+                          >
+                            <i class="fas fa-paper-plane ml-1"></i> ارسال رزومه
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-outline-danger"
+                          >
+                            <i class="fas fa-heart ml-1"></i> نشان کردن
+                          </button>
+
+                          <p class="text-small pt-3">
+                            اشتراک گذاری با دیگران :
+                          </p>
+                          <div class="text-center pt-2">
+                            <a
+                              href="#"
+                              class="bg-dark h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-instagram text-white"></i
+                              ><span></span
+                            ></a>
+                            <a
+                              href="#"
+                              class="bg-success h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-whatsapp text-white"></i
+                              ><span></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="continer cat-big-list bg-white">
+                    <div class="row">
+                      <div class="col-md-2 m-auto">
+                        <img
+                          class="img-fluid"
+                          src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                          alt=""
+                        />
+
+                        <p class="text-center pt-3 h6">
+                          <i class="fas fa-star text-warning ml-2"></i>2.5/5
+                        </p>
+                        <p class="text-center h6">
+                          <i class="fas fa-eye text-dark ml-2"></i>2k
+                        </p>
+                      </div>
+                      <div class="col-md-6 mt-2 mb-2 text-right">
+                        <h5 class="pr-2 pb-2">
+                          کارشناس فروش نرم افزار
+                          <span
+                            class="font-weight-normal badge badge-pill badge-danger"
+                            >فوری</span
+                          >
+                        </h5>
+                        <h6 class="text-small m-2">
+                          <i class="far fa-building ml-2"></i>
+                          نام شرکت
+                        </h6>
+                        <p class="text-small m-2">
+                          <i class="fas fa-user-alt ml-2"></i>
+                          استخدام Front-End Developer
+                        </p>
+                        <p class="text-small m-2">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          تهران
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-copy ml-2"></i>
+                          قرارداد تمام‌وقت (حقوق از ۳,۵۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰
+                          تومان)
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-clock ml-2"></i>
+                          ارسال شده در 5:45 بعد از ظهر امرو
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="text-right">
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-primary"
+                          >
+                            <i class="fas fa-paper-plane ml-1"></i> ارسال رزومه
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-outline-danger"
+                          >
+                            <i class="fas fa-heart ml-1"></i> نشان کردن
+                          </button>
+
+                          <p class="text-small pt-3">
+                            اشتراک گذاری با دیگران :
+                          </p>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="bg-dark h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-instagram text-white"></i
+                              ><span></span
+                            ></a>
+                            <a
+                              href="#"
+                              class="bg-success h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-whatsapp text-white"></i
+                              ><span></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="continer cat-big-list bg-white">
+                    <div class="row">
+                      <div class="col-md-2 m-auto">
+                        <img
+                          class="img-fluid"
+                          src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                          alt=""
+                        />
+
+                        <p class="text-center pt-3 h6">
+                          <i class="fas fa-star text-warning ml-2"></i>2.5/5
+                        </p>
+                        <p class="text-center h6">
+                          <i class="fas fa-eye text-dark ml-2"></i>2k
+                        </p>
+                      </div>
+                      <div class="col-md-6 mt-2 mb-2 text-right">
+                        <h5 class="pr-2 pb-2">
+                          کارشناس فروش نرم افزار
+                          <span
+                            class="font-weight-normal badge badge-pill badge-danger"
+                            >فوری</span
+                          >
+                        </h5>
+                        <h6 class="text-small m-2">
+                          <i class="far fa-building ml-2"></i>
+                          نام شرکت
+                        </h6>
+                        <p class="text-small m-2">
+                          <i class="fas fa-user-alt ml-2"></i>
+                          استخدام Front-End Developer
+                        </p>
+                        <p class="text-small m-2">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          تهران
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-copy ml-2"></i>
+                          قرارداد تمام‌وقت (حقوق از ۳,۵۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰
+                          تومان)
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-clock ml-2"></i>
+                          ارسال شده در 5:45 بعد از ظهر امرو
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="text-right">
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-primary"
+                          >
+                            <i class="fas fa-paper-plane ml-1"></i> ارسال رزومه
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-outline-danger"
+                          >
+                            <i class="fas fa-heart ml-1"></i> نشان کردن
+                          </button>
+
+                          <p class="text-small pt-3">
+                            اشتراک گذاری با دیگران :
+                          </p>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="bg-dark h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-instagram text-white"></i
+                              ><span></span
+                            ></a>
+                            <a
+                              href="#"
+                              class="bg-success h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-whatsapp text-white"></i
+                              ><span></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="continer cat-big-list bg-white">
+                    <div class="row">
+                      <div class="col-md-2 m-auto">
+                        <img
+                          class="img-fluid"
+                          src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                          alt=""
+                        />
+
+                        <p class="text-center pt-3 h6">
+                          <i class="fas fa-star text-warning ml-2"></i>2.5/5
+                        </p>
+                        <p class="text-center h6">
+                          <i class="fas fa-eye text-dark ml-2"></i>2k
+                        </p>
+                      </div>
+                      <div class="col-md-6 mt-2 mb-2 text-right">
+                        <h5 class="pr-2 pb-2">
+                          کارشناس فروش نرم افزار
+                          <span
+                            class="font-weight-normal badge badge-pill badge-danger"
+                            >فوری</span
+                          >
+                        </h5>
+                        <h6 class="text-small m-2">
+                          <i class="far fa-building ml-2"></i>
+                          نام شرکت
+                        </h6>
+                        <p class="text-small m-2">
+                          <i class="fas fa-user-alt ml-2"></i>
+                          استخدام Front-End Developer
+                        </p>
+                        <p class="text-small m-2">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          تهران
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-copy ml-2"></i>
+                          قرارداد تمام‌وقت (حقوق از ۳,۵۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰
+                          تومان)
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-clock ml-2"></i>
+                          ارسال شده در 5:45 بعد از ظهر امرو
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="text-right">
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-primary"
+                          >
+                            <i class="fas fa-paper-plane ml-1"></i> ارسال رزومه
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-outline-danger"
+                          >
+                            <i class="fas fa-heart ml-1"></i> نشان کردن
+                          </button>
+
+                          <p class="text-small pt-3">
+                            اشتراک گذاری با دیگران :
+                          </p>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="bg-dark h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-instagram text-white"></i
+                              ><span></span
+                            ></a>
+                            <a
+                              href="#"
+                              class="bg-success h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-whatsapp text-white"></i
+                              ><span></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="continer cat-big-list bg-white">
+                    <div class="row">
+                      <div class="col-md-2 m-auto">
+                        <img
+                          class="img-fluid"
+                          src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                          alt=""
+                        />
+
+                        <p class="text-center pt-3 h6">
+                          <i class="fas fa-star text-warning ml-2"></i>2.5/5
+                        </p>
+                        <p class="text-center h6">
+                          <i class="fas fa-eye text-dark ml-2"></i>2k
+                        </p>
+                      </div>
+                      <div class="col-md-6 mt-2 mb-2 text-right">
+                        <h5 class="pr-2 pb-2">
+                          کارشناس فروش نرم افزار
+                          <span
+                            class="font-weight-normal badge badge-pill badge-danger"
+                            >فوری</span
+                          >
+                        </h5>
+                        <h6 class="text-small m-2">
+                          <i class="far fa-building ml-2"></i>
+                          نام شرکت
+                        </h6>
+                        <p class="text-small m-2">
+                          <i class="fas fa-user-alt ml-2"></i>
+                          استخدام Front-End Developer
+                        </p>
+                        <p class="text-small m-2">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          تهران
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-copy ml-2"></i>
+                          قرارداد تمام‌وقت (حقوق از ۳,۵۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰
+                          تومان)
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-clock ml-2"></i>
+                          ارسال شده در 5:45 بعد از ظهر امرو
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="text-right">
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-primary"
+                          >
+                            <i class="fas fa-paper-plane ml-1"></i> ارسال رزومه
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-outline-danger"
+                          >
+                            <i class="fas fa-heart ml-1"></i> نشان کردن
+                          </button>
+
+                          <p class="text-small pt-3">
+                            اشتراک گذاری با دیگران :
+                          </p>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="bg-dark h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-instagram text-white"></i
+                              ><span></span
+                            ></a>
+                            <a
+                              href="#"
+                              class="bg-success h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-whatsapp text-white"></i
+                              ><span></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="continer cat-big-list bg-white">
+                    <div class="row">
+                      <div class="col-md-2 m-auto">
+                        <img
+                          class="img-fluid"
+                          src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                          alt=""
+                        />
+
+                        <p class="text-center pt-3 h6">
+                          <i class="fas fa-star text-warning ml-2"></i>2.5/5
+                        </p>
+                        <p class="text-center h6">
+                          <i class="fas fa-eye text-dark ml-2"></i>2k
+                        </p>
+                      </div>
+                      <div class="col-md-6 mt-2 mb-2 text-right">
+                        <h5 class="pr-2 pb-2">
+                          کارشناس فروش نرم افزار
+                          <span
+                            class="font-weight-normal badge badge-pill badge-danger"
+                            >فوری</span
+                          >
+                        </h5>
+                        <h6 class="text-small m-2">
+                          <i class="far fa-building ml-2"></i>
+                          نام شرکت
+                        </h6>
+                        <p class="text-small m-2">
+                          <i class="fas fa-user-alt ml-2"></i>
+                          استخدام Front-End Developer
+                        </p>
+                        <p class="text-small m-2">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          تهران
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-copy ml-2"></i>
+                          قرارداد تمام‌وقت (حقوق از ۳,۵۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰
+                          تومان)
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-clock ml-2"></i>
+                          ارسال شده در 5:45 بعد از ظهر امرو
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="text-right">
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-primary"
+                          >
+                            <i class="fas fa-paper-plane ml-1"></i> ارسال رزومه
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-outline-danger"
+                          >
+                            <i class="fas fa-heart ml-1"></i> نشان کردن
+                          </button>
+
+                          <p class="text-small pt-3">
+                            اشتراک گذاری با دیگران :
+                          </p>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="bg-dark h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-instagram text-white"></i
+                              ><span></span
+                            ></a>
+                            <a
+                              href="#"
+                              class="bg-success h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-whatsapp text-white"></i
+                              ><span></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="continer cat-big-list bg-white">
+                    <div class="row">
+                      <div class="col-md-2 m-auto">
+                        <img
+                          class="img-fluid"
+                          src="https://jobinja.ir/files/uploads/images/680dda04-1695-11ea-9607-26a4da5b8340_1d9d4d8a-b9fb-47b1-8bd6-373f1e1d47d1/companies_logo_128x128.jpg"
+                          alt=""
+                        />
+
+                        <p class="text-center pt-3 h6">
+                          <i class="fas fa-star text-warning ml-2"></i>2.5/5
+                        </p>
+                        <p class="text-center h6">
+                          <i class="fas fa-eye text-dark ml-2"></i>2k
+                        </p>
+                      </div>
+                      <div class="col-md-6 mt-2 mb-2 text-right">
+                        <h5 class="pr-2 pb-2">
+                          کارشناس فروش نرم افزار
+                          <span
+                            class="font-weight-normal badge badge-pill badge-danger"
+                            >فوری</span
+                          >
+                        </h5>
+                        <h6 class="text-small m-2">
+                          <i class="far fa-building ml-2"></i>
+                          نام شرکت
+                        </h6>
+                        <p class="text-small m-2">
+                          <i class="fas fa-user-alt ml-2"></i>
+                          استخدام Front-End Developer
+                        </p>
+                        <p class="text-small m-2">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          تهران
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-copy ml-2"></i>
+                          قرارداد تمام‌وقت (حقوق از ۳,۵۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰
+                          تومان)
+                        </p>
+
+                        <p class="text-small m-2">
+                          <i class="far fa-clock ml-2"></i>
+                          ارسال شده در 5:45 بعد از ظهر امرو
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="text-right">
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-primary"
+                          >
+                            <i class="fas fa-paper-plane ml-1"></i> ارسال رزومه
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-block btn-outline-danger"
+                          >
+                            <i class="fas fa-heart ml-1"></i> نشان کردن
+                          </button>
+
+                          <p class="text-small pt-3">
+                            اشتراک گذاری با دیگران :
+                          </p>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="bg-dark h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-instagram text-white"></i
+                              ><span></span
+                            ></a>
+                            <a
+                              href="#"
+                              class="bg-success h3 pr-3 pl-3 pt-2 pb-1 rounded-circle"
+                              ><i class="fab fa-whatsapp text-white"></i
+                              ><span></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination bg-white p-2 justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
