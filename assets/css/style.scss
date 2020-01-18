@@ -1401,32 +1401,65 @@ background-color: $main-color-dark !important;
 
 }
 
+#single-bg {
+ 
+  background-image:linear-gradient(0deg, rgba(2,0,36,0.8911939775910365) 0%, rgba(9,9,121,0.7315301120448179) 35%, rgba(0,212,255,0) 100%),
+   url('https://wallpaperaccess.com/full/1639138.jpg');
+height: 300px;
+background-size: cover;
+}
+
+[hidden] {
+  display: none !important;
+}
 
 
 
+.list-group-item-action {
+  width: auto !important; 
+
+}
+
+.list-group-item {
+  display: inline-flex;
+
+}
 
 
+.list-group-item.active {
 
+  background-color: #00171f;
+  border-color: #080a33;
+}
 
+.list-group-item {
+  background-color: #00a8e8;
+  border: none;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
 
+ .list-group-item-action:hover {
+  background-color: #006a92;
+  transition: .3s !important;
+}
 
+.list-group-item-action, .list-group-item-action {
+  transition: .3s !important;
+}
 
+.list-group-item:first-child {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.list-group-item:last-child {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
 
 
 
@@ -1442,7 +1475,11 @@ background-color: $main-color-dark !important;
 
 
 @media (max-width: 576px) {
+  .single-detail-company {
 
+    font-size: 11px !important;
+
+  }
 }
 
 @media (max-width: 768px) {
@@ -1473,6 +1510,9 @@ background-color: $main-color-dark !important;
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+
+
+
 }
 
 // Medium devices (tablets, 768px and up)
