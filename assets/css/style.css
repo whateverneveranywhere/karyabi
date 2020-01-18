@@ -1473,6 +1473,69 @@ cite a {
   width: max-content;
 }
 
+#single-bg {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 0, 36, 0.891194)), color-stop(35%, rgba(9, 9, 121, 0.73153)), to(rgba(0, 212, 255, 0))), url("https://wallpaperaccess.com/full/1639138.jpg");
+  background-image: linear-gradient(0deg, rgba(2, 0, 36, 0.891194) 0%, rgba(9, 9, 121, 0.73153) 35%, rgba(0, 212, 255, 0) 100%), url("https://wallpaperaccess.com/full/1639138.jpg");
+  height: 300px;
+  background-size: cover;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.list-group-item-action {
+  width: auto !important;
+}
+
+.list-group-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.list-group-item.active {
+  background-color: #00171f;
+  border-color: #080a33;
+}
+
+.list-group-item {
+  background-color: #00a8e8;
+  border: none;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.list-group-item-action:hover {
+  background-color: #006a92;
+  -webkit-transition: .3s !important;
+  transition: .3s !important;
+}
+
+.list-group-item-action, .list-group-item-action {
+  -webkit-transition: .3s !important;
+  transition: .3s !important;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.list-group-item:last-child {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+@media (max-width: 576px) {
+  .single-detail-company {
+    font-size: 11px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .hide-mobile {
     display: none !important;
