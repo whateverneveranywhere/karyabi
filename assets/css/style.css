@@ -1383,8 +1383,8 @@ input:checked + .slider:before {
   border-top-left-radius: 60px;
   bottom: -20px;
   right: -20px;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#00000080), color-stop(#15030c70), color-stop(#1e07197d), color-stop(#230c27), color-stop(#211138), color-stop(#21184970), color-stop(#1b215b7d), color-stop(#022a6e7a), color-stop(#0435857a), color-stop(#05419d7d), color-stop(#044db67d), to(#005acf6e));
-  background-image: linear-gradient(to right top, #00000080, #15030c70, #1e07197d, #230c27, #211138, #21184970, #1b215b7d, #022a6e7a, #0435857a, #05419d7d, #044db67d, #005acf6e);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#00000080), color-stop(#15030c70), color-stop(#1e07197d), color-stop(#230c277d), color-stop(#21113887), color-stop(#21184970), color-stop(#1b215b7d), color-stop(#022a6e7a), color-stop(#0435857a), color-stop(#05419d7d), color-stop(#044db67d), to(#005acf6e));
+  background-image: linear-gradient(to right top, #00000080, #15030c70, #1e07197d, #230c277d, #21113887, #21184970, #1b215b7d, #022a6e7a, #0435857a, #05419d7d, #044db67d, #005acf6e);
   color: white;
   padding: 25px;
 }
@@ -1464,7 +1464,7 @@ cite a {
 .btn-active {
   background-image: none;
   color: white !important;
-  background-color: #00171f !important;
+  background-color: #003459 !important;
 }
 
 .w-max {
@@ -1528,6 +1528,382 @@ cite a {
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
+}
+
+.out-of-stock {
+  opacity: 0.5;
+}
+
+.out-of-stock-stamp {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: relative;
+  display: inline-block;
+  color: #dc3545;
+  padding: 15px;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 0px 0px 10px #dc3545;
+  box-shadow: inset 0px 0px 0px 10px #dc3545;
+}
+
+.out-of-stock-stamp:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://i.imgur.com/5O74VI6.jpg");
+  mix-blend-mode: lighten;
+}
+
+.sent-res-stat {
+  position: relative;
+  display: inline-block;
+  color: #0076cd;
+  padding: 15px;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 0px 0px 5px #0076cd;
+  box-shadow: inset 0px 0px 0px 5px #0076cd;
+}
+
+.sent-res-stat:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://i.imgur.com/5O74VI6.jpg");
+  mix-blend-mode: lighten;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 7px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 7px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #003459;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  font-size: 36px;
+  text-align: center;
+  line-height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  font-weight: 300;
+}
+
+.progress .progress-value div {
+  margin-top: 10px;
+}
+
+.progress .progress-value span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+.progress[data-percentage="10"] .progress-right .progress-bar {
+  -webkit-animation: loading-1 1.5s linear forwards;
+          animation: loading-1 1.5s linear forwards;
+}
+
+.progress[data-percentage="10"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.progress[data-percentage="20"] .progress-right .progress-bar {
+  -webkit-animation: loading-2 1.5s linear forwards;
+          animation: loading-2 1.5s linear forwards;
+}
+
+.progress[data-percentage="20"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.progress[data-percentage="30"] .progress-right .progress-bar {
+  -webkit-animation: loading-3 1.5s linear forwards;
+          animation: loading-3 1.5s linear forwards;
+}
+
+.progress[data-percentage="30"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.progress[data-percentage="40"] .progress-right .progress-bar {
+  -webkit-animation: loading-4 1.5s linear forwards;
+          animation: loading-4 1.5s linear forwards;
+}
+
+.progress[data-percentage="40"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.progress[data-percentage="50"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.progress[data-percentage="50"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+          animation: 0;
+}
+
+.progress[data-percentage="60"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.progress[data-percentage="60"] .progress-left .progress-bar {
+  -webkit-animation: loading-1 1.5s linear forwards 1.5s;
+          animation: loading-1 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="70"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.progress[data-percentage="70"] .progress-left .progress-bar {
+  -webkit-animation: loading-2 1.5s linear forwards 1.5s;
+          animation: loading-2 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="80"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.progress[data-percentage="80"] .progress-left .progress-bar {
+  -webkit-animation: loading-3 1.5s linear forwards 1.5s;
+          animation: loading-3 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="90"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.progress[data-percentage="90"] .progress-left .progress-bar {
+  -webkit-animation: loading-4 1.5s linear forwards 1.5s;
+          animation: loading-4 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="100"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+          animation: loading-5 1.5s linear forwards;
+}
+
+.progress[data-percentage="100"] .progress-left .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards 1.5s;
+          animation: loading-5 1.5s linear forwards 1.5s;
+}
+
+@-webkit-keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+
+@-webkit-keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+
+@-webkit-keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+
+@-webkit-keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+
+@-webkit-keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+
+.progress {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 576px) {
