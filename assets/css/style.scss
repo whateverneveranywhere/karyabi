@@ -1043,7 +1043,6 @@ blockquote {
 }
 .btn-grad {
   flex: 1 1 auto;
-  margin: 5px;
   padding: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -1664,14 +1663,23 @@ Due to the split circle of progress-left and progress right, we must use the ani
 	}
 
 
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    color: white;
+    background-color: #00a8e8;
+    border: 1px solid #00171f;
+}
 
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
 
-
-
-
-
-
-
+.nav-tabs .nav-link {
+  background: #00171f;
+  border: 1px solid #ffffff;
+color:white;
+}
 
 
 
