@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/libs/fontawesome/css/all.css" />
+    <link href="./assets/css/select.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>کاریابی دانشگاه تهران</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ltr">
+        <a class="navbar-brand d-inline-flex-center" href="#">
+          <img
+            src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-logo-horizontal-white-20.png"
+            width="150"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+
+        <div class="dropdown hide-responsive">
+          <button
+            class="btn btn-sm btn-light dropdown-toggle"
+            type="button"
+            id="dropdownMenu2"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            تنظیمات
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item text-center pt-3" type="button">
+              <img
+                class="img-fluid text-center d-inline-flex-center bg-white rounded-circle"
+                width="60"
+                src="https://pngimage.net/wp-content/uploads/2018/06/man-icon-vector-png-4.png"
+                alt=""
+              />
+
+              <h6 class="text-right pt-3">
+                سیاوش صادقی
+              </h6>
+              <p class="text-right text-muted text-small">
+                بهبود سیستم | Behbood System
+              </p>
+            </button>
+            <div class="text-right text-small">
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                ایجاد آگهی استخدام
+                <i class="fas fa-plus ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                مشاهده آگهی‌های استخدام
+                <i class="fas fa-file-export ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                ویرایش اطلاعات شرکت
+                <i class="fas fa-edit ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                مدیریت اعضای شرکت
+                <i class="fas fa-users ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                تاریخچه حساب
+                <i class="far fa-money-bill-alt ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                کد هدیه دارید؟
+                <i class="fas fa-gift ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                تیکت‌های پشتیبانی
+                <i class="far fa-life-ring ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                تنظیمات حساب کاربری
+                <i class="fas fa-user-cog ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                مدیریت اطلاع رسانی‌ها
+                <i class="fas fa-sign-out ml-2"></i>
+              </button>
+              <button class="dropdown-item pb-2 pt-2" type="button">
+                خروج
+                <i class="far fa-bell ml-2"></i>
+              </button>
+            </div>
+          </div>
+          <img
+            class="img-fluid text-center d-inline-flex-center bg-white rounded-circle"
+            width="30"
+            src="https://pngimage.net/wp-content/uploads/2018/06/man-icon-vector-png-4.png"
+            alt=""
+          />
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mr-4 ml-4"
+          id="navbarTogglerDemo03"
+        >
+          <ul class="navbar-nav ml-auto mt-2 pr-0 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <button type="button" class="btn bg-white text-small">
+                  خرید اشتراک و امور مالی
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <button type="button" class="btn bg-white text-small">
+                  پروفایل شرکت
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <button type="button" class="btn bg-white text-small">
+                  پوشه‌های رزومه
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <button
+                  type="button"
+                  class="btn btn-light text-small nav-btn-active"
+                >
+                  آگهی‌ها
+                </button>
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <button type="button" class="btn btn-light text-small">
+                  ایجاد آگهی <i class="fas fa-plus mr-1"></i>
+                </button>
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="bg-3 container-fluid">
+        <p class="text-white text-center p-1 text-small m-auto">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-small text-right pr-0 pl-0">
+            <div class="buttons-filter-wrapper text-small overflow-auto">
+              <div
+                class="buttons-filter w-max text-small list-group d-inline-block"
+              >
+                <a
+                  class="btn-sm m-0 text-small p-2 btn-active rounded-0"
+                  type="button"
+                >
+                  <h6 class="m-0 p-1">
+                    متقاضیان
+                  </h6>
+                </a>
+                <a class="btn-sm m-0 text-small p-2 rounded-0" type="button">
+                  <h6 class="m-0 p-1">
+                    رزومه‌های پیشنهادی
+                  </h6>
+                </a>
+                <a class="btn-sm m-0 text-small p-2 rounded-0" type="button">
+                  <h6 class="m-0 p-1">
+                    ویرایش
+                  </h6>
+                </a>
+                <a class="btn-sm m-0 text-small p-2 rounded-0" type="button">
+                  <h6 class="m-0 p-1">
+                    مشاهده
+                  </h6>
+                </a>
+              </div>
+            </div>
+            <div class="dropdown show pt-3">
+              <a
+                class="btn btn-light btn-block dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                امکانات
+              </a>
+
+              <div
+                class="dropdown-menu text-right"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-pen ml-2"></i>ویرایش</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="far fa-eye ml-2"></i>مشاهده آگهی در وبسایت</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-bookmark ml-2"></i>مدیریت دنبال کنندگان</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="far fa-copy ml-2"></i>کپی در آگهی جدید</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-archive ml-2"></i>آرشیو</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid shadow-lg mt-5 mb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bg-white">
+              <h5 class="pt-3 pb-4 pr-3 text-right">
+                لیست آگهی‌ها
+              </h5>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="container">
+                    <form>
+                      <div class="form-group mt-0">
+                        <input
+                          class="text-right"
+                          type="text"
+                          required="required"
+                        />
+                        <label for="input" class="control-label"
+                          >جستجو در محتوای رزومه...</label
+                        ><i class="bar"></i>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-group mt-0 rtl">
+                    <select>
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                    </select>
+                    <label for="select" class="control-label"
+                      >عملیات گروهی</label
+                    ><i class="bar"></i>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-group mt-0 rtl">
+                    <select>
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                    </select>
+                    <label for="select" class="control-label">مرتب‌سازی</label
+                    ><i class="bar"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 table-responsive text-right">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th class="font-weight-normal" scope="col">
+                          عکس
+                        </th>
+                        <th class="font-weight-normal" scope="col">
+                          نام متقاضی
+                        </th>
+                        <th class="font-weight-normal" scope="col">
+                          وضعیت
+                        </th>
+                        <th class="font-weight-normal" scope="col">
+                          تاریخ
+                        </th>
+                        <th class="font-weight-normal" scope="col">
+                          جزئیات
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="text-center">
+                            <img
+                              class="img-fluid rounded-circle pt-4"
+                              width="100"
+                              src="https://steamuserimages-a.akamaihd.net/ugc/964222183901491853/0877EE7EDB9F086E3442D39EBACAB06B93562566/?imw=268&amp;imh=268&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true"
+                              alt=""
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-small mt-3">میترا تهرانی</p>
+                          <p class="text-small text-muted">
+                            برنامه نویس و طراح و توسعه وب
+                          </p>
+                        </td>
+                        <td class="bg-warning v-a-unset">
+                          <p class="text-small text-center">
+                            در انتظار تعیین وضعیت
+                          </p>
+                        </td>
+                        <td>
+                          <p class="text-small text-center">
+                            ۴ ماه و ۸ روز قبل
+                          </p>
+                        </td>
+                        <td>
+                          <div class="d-inline-flex-center">
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-star m-2"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-list m-2"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="text-center">
+                            <img
+                              class="img-fluid rounded-circle pt-4"
+                              width="100"
+                              src="https://steamuserimages-a.akamaihd.net/ugc/964222183901491853/0877EE7EDB9F086E3442D39EBACAB06B93562566/?imw=268&amp;imh=268&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true"
+                              alt=""
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-small mt-3">میترا تهرانی</p>
+                          <p class="text-small text-muted">
+                            برنامه نویس و طراح و توسعه وب
+                          </p>
+                        </td>
+                        <td class="bg-warning v-a-unset">
+                          <p class="text-small text-center">
+                            در انتظار تعیین وضعیت
+                          </p>
+                        </td>
+                        <td>
+                          <p class="text-small text-center">
+                            ۴ ماه و ۸ روز قبل
+                          </p>
+                        </td>
+                        <td>
+                          <div class="d-inline-flex-center">
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-star m-2"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-list m-2"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="text-center">
+                            <img
+                              class="img-fluid rounded-circle pt-4"
+                              width="100"
+                              src="https://steamuserimages-a.akamaihd.net/ugc/964222183901491853/0877EE7EDB9F086E3442D39EBACAB06B93562566/?imw=268&amp;imh=268&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true"
+                              alt=""
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-small mt-3">میترا تهرانی</p>
+                          <p class="text-small text-muted">
+                            برنامه نویس و طراح و توسعه وب
+                          </p>
+                        </td>
+                        <td class="bg-warning v-a-unset">
+                          <p class="text-small text-center">
+                            در انتظار تعیین وضعیت
+                          </p>
+                        </td>
+                        <td>
+                          <p class="text-small text-center">
+                            ۴ ماه و ۸ روز قبل
+                          </p>
+                        </td>
+                        <td>
+                          <div class="d-inline-flex-center">
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-star m-2"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-list m-2"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="text-center">
+                            <img
+                              class="img-fluid rounded-circle pt-4"
+                              width="100"
+                              src="https://steamuserimages-a.akamaihd.net/ugc/964222183901491853/0877EE7EDB9F086E3442D39EBACAB06B93562566/?imw=268&amp;imh=268&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true"
+                              alt=""
+                            />
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-small mt-3">میترا تهرانی</p>
+                          <p class="text-small text-muted">
+                            برنامه نویس و طراح و توسعه وب
+                          </p>
+                        </td>
+                        <td class="bg-warning v-a-unset">
+                          <p class="text-small text-center">
+                            در انتظار تعیین وضعیت
+                          </p>
+                        </td>
+                        <td>
+                          <p class="text-small text-center">
+                            ۴ ماه و ۸ روز قبل
+                          </p>
+                        </td>
+                        <td>
+                          <div class="d-inline-flex-center">
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-star m-2"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-sm p-1 bg-dark no-radius m-0 text-white"
+                            >
+                              <i class="fas fa-list m-2"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-md-4">
+                  <div class="text-center rounded-bottom pr-1 pl-1">
+                    <button
+                      type="button"
+                      class="btn-block btn bg-dark btn-active no-radius m-0 text-white text-small"
+                    >
+                      همه <i class="fas fa-users mr-2"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn-block btn bg-dark no-radius m-0 text-white text-small"
+                    >
+                      نشان شده ها<i class="fas fa-star mr-2"></i>
+                    </button>
+
+                    <div class="accordion" id="accordionExample">
+                      <div class="text-right mb-2 mt-2">
+                        <div id="headingOne">
+                          <a
+                            href="#"
+                            class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white filter-button-style"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            وضعیت متقاضی
+                          </a>
+                        </div>
+
+                        <div
+                          id="collapseOne"
+                          class="collapse show"
+                          aria-labelledby="headingOne"
+                        >
+                          <div class="card-body p-0">
+                            <form>
+                              <div class="checkbox mt-3">
+                                <label>
+                                  <input
+                                    class="text-right"
+                                    type="checkbox"
+                                    checked="checked"
+                                  />I'm the label from a checkbox<i
+                                    class="helper"
+                                  ></i>
+                                </label>
+                              </div>
+                              <div class="checkbox">
+                                <label>
+                                  <input
+                                    class="text-right"
+                                    type="checkbox"
+                                  />I'm the label from a checkbox<i
+                                    class="helper"
+                                  ></i>
+                                </label>
+                              </div>
+                              <div class="checkbox">
+                                <label>
+                                  <input
+                                    class="text-right"
+                                    type="checkbox"
+                                  />I'm the label from a checkbox<i
+                                    class="helper"
+                                  ></i>
+                                </label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-right mb-2 mt-2">
+                      <div id="headingTwo">
+                        <a
+                          href="#"
+                          class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white filter-button-style"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          استان
+                        </a>
+                      </div>
+
+                      <div
+                        id="collapseTwo"
+                        class="collapse "
+                        aria-labelledby="headingTwo"
+                      >
+                        <div class="card-body p-0">
+                          2
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-right mb-2 mt-2">
+                      <div id="headingThree">
+                        <a
+                          href="#"
+                          class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white filter-button-style"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          جنسیت
+                        </a>
+                      </div>
+
+                      <div
+                        id="collapseThree"
+                        class="collapse "
+                        aria-labelledby="headingThree"
+                      >
+                        <div class="card-body p-0">
+                          3
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-right mb-2 mt-2">
+                      <div id="headingFour">
+                        <a
+                          href="#"
+                          class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white filter-button-style"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          سابقه کار
+                        </a>
+                      </div>
+
+                      <div
+                        id="collapseFour"
+                        class="collapse "
+                        aria-labelledby="headingFour"
+                      >
+                        <div class="card-body p-0">
+                          4
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-right mb-2 mt-2">
+                      <div id="headingFour">
+                        <a
+                          href="#"
+                          class="btn-sm m-0 btn-block btn-grad btn-1 p-3 text-white filter-button-style"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          نوع رزومه
+                        </a>
+                      </div>
+
+                      <div
+                        id="collapseFour"
+                        class="collapse "
+                        aria-labelledby="headingFour"
+                      >
+                        <div class="card-body p-0">
+                          4
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container text-center pt-4 pb-3">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid btn-1 text-white text-right pb-4">
+        <div class="row">
+          <div class="col-md-3">
+            <h6 class="pt-4 pr-4">
+              کارجویان
+            </h6>
+            <hr class="bg-white" />
+            <div>
+              <a class="text-white" href="">
+                <p class="text-small">آگهی‌های استخدام</p>
+              </a>
+              <a class="text-white" href="">
+                <p class="text-small">ورود / ثبت‌نام کارجو</p>
+              </a>
+              <a class="text-white" href="">
+                <p class="text-small">ایمیل‌های اطلاع‌رسانی</p>
+              </a>
+              <a class="text-white" href="">
+                <p class="text-small">رزومه‌ساز آنلاین</p>
+              </a>
+              <a class="text-white" href="">
+                <p class="text-small">آشنایی با شرکت‌ها</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h6 class="pt-4 pr-4">
+              کارفرمایان
+            </h6>
+            <hr class="bg-white" />
+            <div>
+              <a class="text-white" href="">
+                <p class="text-small">درج آگهی استخدام</p>
+              </a>
+              <a class="text-white" href="">
+                <p class="text-small">ورود به بخش کارفرمایان</p>
+              </a>
+              <a class="text-white" href="">
+                <p class="text-small">تعرفه‌ی انتشار آگهی</p>
+              </a>
+              <a class="text-white" href="">
+                <p class="text-small">سؤالات متداول</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h6 class="pt-4 pr-4">
+              دریافت آگهی های جدید
+            </h6>
+            <hr class="bg-white" />
+            <div class="form-group mt-2 mb-4">
+              <input class="text-right" type="text" required="required" />
+              <label for="input" class="control-label text-white"
+                ><i class="fas fa-envelope ml-2"></i> آدرس ایمیل </label
+              ><i class="bar"></i>
+            </div>
+            <button type="button" class="btn-block btn btn-sm btn-warning mr-2">
+              عضویت در خبرنامه
+            </button>
+          </div>
+          <div class="col-md-3">
+            <h6 class="pt-4 pr-4">
+              جابینجا
+            </h6>
+            <hr class="bg-white" />
+            <div class="d-inline-flex-center">
+              <button
+                type="button"
+                class="d-inline-flex-center btn btn-sm btn-info text-xsmall mr-2"
+              >
+                دنبال کردن ما دراینستاگرام
+                <i class="fab fa-instagram h6 m-2"></i>
+              </button>
+              <button
+                type="button"
+                class="d-inline-flex-center btn btn-sm btn-info text-xsmall mr-2"
+              >
+                دنبال کردن ما در تلگرام
+                <i class="fab fa-telegram-plane h6 m-2"></i>
+              </button>
+            </div>
+            <div class="container pt-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid"
+                      width="100"
+                      src="https://www.bitmeh.com/assets/img/enamad.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid"
+                      width="100"
+                      src="https://ps.w.org/samandehi-logo-manager/assets/icon-256x256.png?rev=1749763"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/libs/fontawesome/js/all.js"></script>
+    <script src="./assets/js/select.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+  </body>
+</html>

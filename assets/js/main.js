@@ -18,3 +18,8 @@ $('.js-data-example-ajax').select2({
       // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
     }
   });
+
+  
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })

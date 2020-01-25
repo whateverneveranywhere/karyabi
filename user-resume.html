@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -116,42 +116,7 @@
     </header>
 
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-small text-right pr-0 pl-0">
-            <div class="buttons-filter-wrapper text-small overflow-auto">
-              <div
-                class="buttons-filter w-max text-small list-group d-inline-block"
-              >
-                <a
-                  class="btn-sm m-0 text-small p-2 rounded-0"
-                  type="button"
-                >
-                  <h6 class="m-0 p-1">
-                    جستجو
-                  </h6>
-                </a>
-                <a class="btn-sm m-0 text-small p-2 rounded-0" type="button">
-                  <h6 class="m-0 p-1">
-                    درخواست‌های من
-                  </h6>
-                </a>
-                <a class="btn-sm m-0 text-small p-2 btn-active rounded-0" type="button">
-                  <h6 class="m-0 p-1">
-                    نشان‌شده‌ها
-                  </h6>
-                </a>
-                <a class="btn-sm m-0 text-small p-2 rounded-0" type="button">
-                  <h6 class="m-0 p-1">
-                    آگهی‌های پیشنهادی
-                  </h6>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    
 
 
 
@@ -266,7 +231,7 @@
             </div>
           </form>
           <div class="button-container">
-            <button type="button" class="button"><span>Submit</span></button>
+            <button type="button" class="button"><span>تایید تغییرات</span></button>
           </div>
         </div>
       </div>
@@ -415,43 +380,12 @@ a joke
               <textarea required="required"></textarea>
               <label for="textarea" class="control-label">آدرس محل سکونت</label><i class="bar"></i>
             </div>
-            <div class="checkbox">
-              <label>
-                <input class="text-right" type="checkbox" checked="checked" />I'm the label from a checkbox<i class="helper"></i>
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input class="text-right" type="checkbox" />I'm the label from a checkbox<i class="helper"></i>
-              </label>
-            </div>
-            <div class="form-radio">
-              <div class="radio">
-                <label>
-                  <input class="text-right" type="radio" name="radio" checked="checked" />
-                  I'm the label from a radio button<i class="helper"></i>
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input class="text-right" type="radio" name="radio" />I'm the label from a radio button<i class="helper"></i>
-                </label>
-              </div>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input class="text-right" type="checkbox" />I'm the label from a checkbox<i class="helper"></i>
-              </label>
-            </div>
+
           </form>
           <div class="button-container">
-            <button type="button" class="button"><span>Submit</span></button>
+            <button type="button" class="button"><span>تایید تغییرات</span></button>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -491,9 +425,44 @@ a joke
 </p>
       </div>
       <div class="col-md-12 mb-2">
-        <button type="button" class="btn btn-block bg-3 text-white text-small">
+        <button type="button" class="btn btn-block bg-3 text-white text-small" data-toggle="modal" data-target="#aboutmodal">
           ویرایش  <i class="fas fa-edit mr-1"></i>
         </button>
+
+  <!-- Modal -->
+<div class="modal fade" id="aboutmodal" tabindex="-1" role="dialog" aria-labelledby="aboutmodalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"> 
+          درباره‌ی من
+
+        </h5>
+        <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <textarea required="required"></textarea>
+              <label for="textarea" class="control-label"> درباره‌ی من
+              </label><i class="bar"></i>
+            </div>
+
+          </form>
+          <div class="button-container">
+            <button type="button" class="button"><span>تایید تغییرات</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       </div>
     </div>
   </div>
@@ -509,14 +478,14 @@ a joke
 
 
  
-      <div class="col-md-12 p-2 mb-2 btn-1">
+      <div class="col-md-12 p-2 mb-2 skill-bg">
         <p class="text-right text-white">مهارت شما...</p>
         <div class="container">
           <select class="js-data-example-ajax w-100"></select>
       
         </div>
 
-        <div class="col-md-12 mt-3 text-right buttons-filter-wrapper overflow-auto">
+        <div class="col-md-12 mt-3 text-right buttons-filter-wrapper overflow-auto" id="myDivId">
           <div class="buttons-filter w-max d-inline-flex-center ">
             <div class="alert ml-3 mr-3 alert-dismissible fade show" role="alert">
               <button type="button" class="close bg-dark text-white p-1 font-weight-normal" data-dismiss="alert" aria-label="Close">
@@ -599,10 +568,116 @@ a joke
     <h5 class="pt-3 text-right">
       <i class="far fa-building ml-2"></i>
       سوابق شغلی
-      <button type="button" class="btn d-inline-flex-center bg-1 text-white text-xsmall">
+      <button type="button" class="btn d-inline-flex-center bg-1 text-white text-xsmall" data-toggle="modal" data-target="#jobhistoryadd">
         اضافه کردن  <i class="fas fa-plus mr-1"></i> 
       </button>
     </h5>
+      <!-- Modal -->
+<div class="modal fade" id="jobhistoryadd" tabindex="-1" role="dialog" aria-labelledby="jobhistoryaddTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"> 
+          سوابق شغلی
+
+        </h5>
+        <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <input class="text-right" type="text" required="required" />
+              <label for="input" class="control-label">عنوان شغلی(سمت)              </label><i class="bar"></i>
+            </div>
+            <div class="form-group">
+              <input class="text-right" type="text" required="required" />
+              <label for="input" class="control-label">نام شرکت              </label><i class="bar"></i>
+            </div>
+<div class="container">
+  <p class="text-right">  از</p>
+
+  <div class="row">
+    <div class="col-md-6">
+     
+      <div class="form-group rtl">
+        <select>
+          <option>-- ماه شروع همکاری --</option>
+          <option>Value 2</option>
+        </select>
+        <label for="select" class="control-label">   
+                          تاریخ اشتغال  
+        </label><i class="bar"></i>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group rtl">
+        <select>
+          <option>-- ماه شروع همکاری --</option>
+          <option>Value 2</option>
+        </select>
+        <label for="select" class="control-label">   
+          سال شروع همکاری
+        </label><i class="bar"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <p class="text-right"> تا</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group rtl">
+        <select>
+          <option>-- ماه شروع همکاری --</option>
+          <option>Value 2</option>
+        </select>
+        <label for="select" class="control-label">   
+                          تاریخ اشتغال  
+        </label><i class="bar"></i>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group rtl">
+        <select>
+          <option>hint</option>
+          <option>Value 2</option>
+        </select>
+        <label for="select" class="control-label">   
+          سال شروع همکاری
+        </label><i class="bar"></i>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="checkbox">
+        <label class="pl-0">
+          <input class="text-right" type="checkbox" checked="checked" />هنوز مشغلوم<i class="helper"></i>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <textarea required="required"></textarea>
+  <label for="textarea" class="control-label"> درباره‌ی من
+  </label><i class="bar"></i>
+</div>
+
+          </form>
+          <div class="button-container">
+            <button type="button" class="button"><span>تایید تغییرات</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <hr>
     <div class="row ml-2 mr-2">
       <div class="col-md-12 main-big-list">
@@ -691,66 +766,131 @@ a joke
   <h5 class="pt-3 text-right">
     <i class="fas fa-graduation-cap ml-2"></i>
     سوابق تحصیلی
-        <button type="button" class="btn d-inline-flex-center bg-1 text-white text-xsmall">
+        <button type="button" class="btn d-inline-flex-center bg-1 text-white text-xsmall"  data-toggle="modal" data-target="#addeducationhistory">
       اضافه کردن  <i class="fas fa-plus mr-1"></i> 
     </button>
   </h5>
+      <!-- Modal -->
+      <div class="modal fade" id="addeducationhistory" tabindex="-1" role="dialog" aria-labelledby="addeducationhistoryTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle"> 
+                سوابق تحصیلی 
+
+      
+              </h5>
+              <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <form>
+                  <div class="form-group">
+                    <input class="text-right" type="text" required="required" />
+                    <label for="input" class="control-label">رشته تحصیلی
+                    </label><i class="bar"></i>
+                  </div>
+                  <div class="form-group">
+                    <input class="text-right" type="text" required="required" />
+                    <label for="input" class="control-label">نام دانشگاه / موسسه آموزشی
+                    </label><i class="bar"></i>
+                  </div>
+               
+                    <div class="form-radio">
+                      <div class="radio">
+                        <label>
+                          <input class="text-right" type="radio" name="radio" checked="checked" />
+                          دیپلم
+                          <i class="helper"></i>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input class="text-right" type="radio" name="radio" checked="checked" />
+                          کاردانی
+                          <i class="helper"></i>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input class="text-right" type="radio" name="radio" checked="checked" />
+                          کارشناسی
+                          <i class="helper"></i>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input class="text-right" type="radio" name="radio" checked="checked" />
+                          کارشناسی ارشد
+                          <i class="helper"></i>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input class="text-right" type="radio" name="radio" checked="checked" />
+                          دکترا و بالاتر
+                          <i class="helper"></i>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input class="text-right" type="radio" name="radio" checked="checked" />
+                          دیگر
+                          <i class="helper"></i>
+                        </label>
+                      </div>
+                    </div>
+                
+               
+      <div class="container">      
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group text-small">
+              <input class="text-right" type="text" required="required" />
+              <label for="input" class="control-label">
+                سال شروع
+              </label><i class="bar"></i>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group text-small">
+              <input class="text-right" type="text" required="required" />
+              <label for="input" class="control-label">
+                سال پایان
+                            </label><i class="bar"></i>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="checkbox">
+              <label class="pl-0 text-small">
+                <input class="text-right" type="checkbox" />
+                هنوز مشغول به تحصیل هستم
+                <i class="helper"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <textarea required="required"></textarea>
+        <label for="textarea" class="control-label"> توضیحات (اختیاری)
+        </label><i class="bar"></i>
+      </div>
+      
+                </form>
+                <div class="button-container">
+                  <button type="button" class="button"><span>تایید تغییرات</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   <hr>
 
-  <div class="row ml-2 mr-2">
-    <div class="col-md-12 main-big-list">
-      <div class="row">
-        <div class="job-desc p-3">
-          <h6 class="text-right">front-end web developer</h6>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-
-        </div>
-        <div class="col-md-4 d-inline-flex-center">
-          <button type="button" class="btn btn-block btn-outline-primary text-small">
-            ویرایش <i class="fas fa-edit mr-1"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row ml-2 mr-2">
-    <div class="col-md-12 main-big-list">
-      <div class="row">
-        <div class="job-desc p-3">
-          <h6 class="text-right">front-end web developer</h6>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-
-        </div>
-        <div class="col-md-4 d-inline-flex-center">
-          <button type="button" class="btn btn-block btn-outline-primary text-small">
-            ویرایش <i class="fas fa-edit mr-1"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row ml-2 mr-2">
-    <div class="col-md-12 main-big-list">
-      <div class="row">
-        <div class="job-desc p-3">
-          <h6 class="text-right">front-end web developer</h6>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-          <p class="text-right">kanoon farhangi amoozesh ghalamchi از۱۳۹۵تا حالا</p>
-
-        </div>
-        <div class="col-md-4 d-inline-flex-center">
-          <button type="button" class="btn btn-block btn-outline-primary text-small">
-            ویرایش <i class="fas fa-edit mr-1"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="row ml-2 mr-2">
     <div class="col-md-12 main-big-list">
       <div class="row">
@@ -817,10 +957,52 @@ a joke
   <h5 class="pt-3 text-right">
     <i class="fas fa-globe-americas ml-2"></i>
         زبان‌ها
-            <button type="button" class="btn d-inline-flex-center bg-1 text-white text-xsmall">
+            <button type="button" class="btn d-inline-flex-center bg-1 text-white text-xsmall"  data-toggle="modal" data-target="#langadd">
       اضافه کردن  <i class="fas fa-plus mr-1"></i> 
     </button>
   </h5>
+      <!-- Modal -->
+      <div class="modal fade" id="langadd" tabindex="-1" role="dialog" aria-labelledby="langaddTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle"> 
+                زبان‌ها       
+              </h5>
+              <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <form>
+    
+                  <div class="form-group rtl">
+                    <select>
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                    </select>
+                    <label for="select" class="control-label">نام زبان
+                    </label><i class="bar"></i>
+                  </div>
+                  <div class="form-group rtl">
+                    <select>
+                      <option>Value 1</option>
+                      <option>Value 2</option>
+                    </select>
+                    <label for="select" class="control-label">سطح تسلط
+                    </label><i class="bar"></i>
+                  </div>
+      
+                </form>
+                <div class="button-container">
+                  <button type="button" class="button"><span>تایید تغییرات</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   <hr>
 
   <div class="row ml-2 mr-2">
@@ -1306,5 +1488,6 @@ a joke
     <script src="./assets/js/select.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
   </body>
 </html>

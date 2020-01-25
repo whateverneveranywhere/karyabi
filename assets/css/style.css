@@ -1923,6 +1923,70 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: white;
 }
 
+#myDivId::-webkit-scrollbar {
+  width: 8px;
+}
+
+#myDivId::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#myDivId::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+.skill-bg {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#00a8e8));
+  background-image: linear-gradient(to top, #ffffff, #00a8e8);
+}
+
+.nav-btn-active {
+  color: #ffffff;
+  background-color: #00a8e8;
+  border-color: #f8f9fa;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #003459;
+}
+
+.dropdown-item {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.dropdown-item:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.filter-button-style {
+  font-size: smaller;
+  height: 35px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table td, .table th {
+  vertical-align: initial;
+}
+
 @media (max-width: 576px) {
   .single-detail-company {
     font-size: 11px !important;
