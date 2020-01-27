@@ -1951,7 +1951,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .dropdown-item:focus, .dropdown-item:hover {
   color: white;
   text-decoration: none;
-  background-color: #003459;
+  background-color: #00171f;
 }
 
 .dropdown-item {
