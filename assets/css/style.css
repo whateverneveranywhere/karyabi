@@ -1991,6 +1991,35 @@ Due to the split circle of progress-left and progress right, we must use the ani
   height: 777px !important;
 }
 
+.right-dot {
+  border-right-style: dotted;
+  color: #007ea7;
+}
+
+.styled-ol ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+.styled-li li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+.styled-li li:before {
+  margin-right: -10px;
+  content: counter(item);
+  background: #007ea7;
+  border-radius: 100%;
+  color: white;
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
+}
+
+/*
+.html2canvas-container { width: 100% !important; height: 3000px !important; }
+*/
 @media (max-width: 576px) {
   .single-detail-company {
     font-size: 11px !important;

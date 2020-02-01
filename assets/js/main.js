@@ -20,6 +20,44 @@ $('.js-data-example-ajax').select2({
   });
 
   
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+function doit() {
+
+  html2canvas($('#capture')[0], {
+    scale:1
+  }).then(function(canvas) {
+    /*
+    var a = document.createElement('a');
+    a.href = canvas.toDataURL("image/png");
+    a.download = 'myfile.png';
+    a.click();
+*/
+
+var img = document.createElement('img');
+ img.src = canvas.toDataURL("image/png");
+
+document.getElementById("capture").appendChild(img);   
+var doc = new jsPDF();
+var imgData = img;
+doc.addImage(canvas.toDataURL("image/jpeg"), 'PNG', 0, 40, 0, 200);
+document.getElementById("atest").href=doc.output('datauristring');                
+                document.getElementById("atest").click();
+                
+
+  });
+
+}
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+*/ 
