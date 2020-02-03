@@ -23,7 +23,7 @@ $('.js-data-example-ajax').select2({
 function doit() {
 
   html2canvas($('#capture')[0], {
-    scale:1
+    scale:3
   }).then(function(canvas) {
     /*
     var a = document.createElement('a');
@@ -32,17 +32,25 @@ function doit() {
     a.click();
 */
 
-var img = document.createElement('img');
- img.src = canvas.toDataURL("image/png");
 
-document.getElementById("capture").appendChild(img);   
-var doc = new jsPDF();
-var imgData = img;
-doc.addImage(canvas.toDataURL("image/jpeg"), 'PNG', 0, 40, 0, 200);
-document.getElementById("atest").href=doc.output('datauristring');                
-                document.getElementById("atest").click();
-                
+var imgData = canvas.toDataURL('image/jpg');
+var imgWidth = 210; 
+var pageHeight = 295;  
+var imgHeight = canvas.height * imgWidth / canvas.width;
+var heightLeft = imgHeight;
+var doc = new jsPDF('p', 'mm','a4', true);
+var position = 19; // give some top padding to first page
 
+doc.addImage(imgData, 'JPG', 0, position, imgWidth, imgHeight,'','FAST');
+heightLeft -= pageHeight;
+
+while (heightLeft >= 0) {
+  position += heightLeft - imgHeight; // top padding for other pages
+  doc.addPage();
+  doc.addImage(imgData, 'JPG', 0, position, imgWidth, imgHeight,'','FAST');
+  heightLeft -= pageHeight;
+}
+doc.save( 'رزومه-دانشگاه-تهران.pdf');
   });
 
 }
